@@ -4,7 +4,6 @@
         $uploadDirectory = "uploads/";
         $uploadFile = $uploadDirectory . basename($file['name']);
         
-        // Create the uploads directory if it doesn't exist
         if (!is_dir($uploadDirectory)) {
             mkdir($uploadDirectory, 0755, true);
         }
